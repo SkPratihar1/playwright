@@ -1,7 +1,6 @@
-//const { test } = require('@playwright/test');
 import {test} from '@playwright/test'
-//const { TodoPage } = require('../page/todo-page');
 import { TodoPage } from "../page/todo-page";
+
 test.describe('todo tests', () => {
   let todoPage;
 
