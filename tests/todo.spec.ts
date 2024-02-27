@@ -1,28 +1,28 @@
-// import {test} from '@playwright/test'
-// import { TodoPage } from "../page/todo-page";
+import {test} from '@playwright/test'
+import { TodoPage } from "../page/todo-page";
 
-// test.describe('todo tests', () => {
-//   let todoPage;
+test.describe('todo tests', () => {
+  let todoPage;
 
-//   test.beforeEach(async ({ page }) => {
-//     todoPage = new TodoPage(page);
-//     await todoPage.goto();
-//     await todoPage.addToDo('item1');
-//     await todoPage.addToDo('item2');
-//   });
+  test.beforeEach(async ({ page }) => {
+    todoPage = new TodoPage(page);
+    await todoPage.goto();
+    await todoPage.addToDo('item1');
+    await todoPage.addToDo('item2');
+  });
 
-//   test.afterEach(async () => {
-//     await todoPage.removeAll();
-//   });
+  test.afterEach(async () => {
+    await todoPage.removeAll();
+  });
 
-//   test('should add an item', async () => {
-//     await todoPage.addToDo('my item');
-//     // ...
-//   });
+  test('should add an item', async () => {
+    await todoPage.addToDo('my item');
+    // ...
+  });
 
-//   test('should remove an item', async () => {
-//     await todoPage.remove('item1');
-//     // ...
-//   });
-// });
+  test('should remove an item', async () => {
+    await todoPage.remove('item1');
+    // ...
+  });
+});
 
