@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test || true"
+    "test-cucumber": "cucumber-js test || true",
+    "test-e2e":"npx playwright test"
+
   },
   "keywords": [],
   "author": "",
