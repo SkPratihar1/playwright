@@ -20,9 +20,7 @@ jobs:
     - name: Run Playwright-cucumber tests
       run: npm run test-cucumber
     - name: Run Playwright-e2e tests
-      run: npm run test-e2e 
-    - name: Show report
-      run: npx playwright show-report  
+      run: npm run test-e2e  
     - uses: actions/upload-artifact@v3
       if: always()
       with:

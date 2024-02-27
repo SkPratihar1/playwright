@@ -12,12 +12,15 @@
         
         "dryRun": false,
         "require": [
-            "tests/step-definitions/*.ts",
+            "src/step-definitions/*.ts",
             "src/hooks/hooks.ts"
         ],
         "requireModule": [
             "ts-node/register"
         ],
+        "use": {
+            "headless": false
+        },
         "format": [
             "progress-bar",
             "html:test-results/cucumber-report.html",
@@ -33,12 +36,15 @@
        
         "dryRun": false,
         "require": [
-            "tests/step-definitions/*.ts",
+            "src/step-definitions/*.ts",
             "src/hooks/hooks.ts"
         ],
         "requireModule": [
             "ts-node/register"
         ],
+        "use": {
+            "headless": false
+        },
         "format": [
             "progress-bar",
             "html:test-results/cucumber-report.html",

@@ -5,7 +5,7 @@ let page: Page;
 setDefaultTimeout(60 * 1000 * 2)
 
 Given(`I am on the login page`, async function () {
-    const browser = await chromium.launch();
+    const browser = await chromium.launch({ headless: false });
      page = await browser.newPage();
     await page.goto('https://practicetestautomation.com/practice-test-login');
 });
