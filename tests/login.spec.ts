@@ -1,8 +1,12 @@
 import { test, expect } from '@playwright/test';
 import {LoginPage} from '../page/loginPage'
 import {LogOutPage} from '../page/logoutPage'
+import { chromium } from '@playwright/test'
 
 test.beforeEach(async ({page}) => {
+    // const browser = await chromium.launch({ headless: false });
+    // page = await browser.newPage();
+    // await page.goto('https://practicetestautomation.com/practice-test-login');
     await page.goto('/practice-test-login');
 })
 
